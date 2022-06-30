@@ -6,3 +6,4 @@ Nikolai Ramalingam
 Halen Stalians
 Eric Huang
 Diana Estrada
+Jaden Lee
