@@ -10,3 +10,4 @@ Diana Estrada
 Jaden Lee  
 Jonah Kim  
 Constantine Wang
+Catherine Kang
