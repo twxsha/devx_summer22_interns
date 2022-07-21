@@ -1,6 +1,8 @@
-import gifImage from "../../src/gif.gif";
 import "../Home.css";
 import background_image from "../images/background.png";
+import logoImage from "../../src/logo.png";
+import gifImage from "../../src/gif.gif";
+
 
 function Home() {
     return (
