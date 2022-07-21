@@ -1,8 +1,8 @@
 import "../Home.css";
+import styles from "../App.css"
 import background_image from "../images/background.png";
-import logoImage from "../../src/logo.png";
+import logoImage from "../images/logo.svg";
 import gifImage from "../../src/gif.gif";
-
 
 function Home() {
     return (
@@ -32,6 +32,7 @@ function Home() {
             }} />
           </div>
         </div>
+        
       );
 }
 export default Home;
