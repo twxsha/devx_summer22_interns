@@ -8,7 +8,6 @@ function About() {
       <div className="About" style={{ 
         backgroundImage: `url(${background_image})`,
         height: 1117,
-        marginTop: -20,
       }}>
 
         <div className="title">
@@ -16,15 +15,14 @@ function About() {
         </div>
     
         <div className="p1">
-          <h2> 
+          <p> 
           Ever feel like what you learn in the classroom is
           deeply theoretical, with little opportunities to build
           out practical applications?
-          </h2>
+          </p>
         </div>
-
         <div className="p2">
-          <h2>
+          <p>
           DevX is a student organization dedicated to solving
           that very problem! We comprise of several project
           teams building out real-world projects to help tackle
@@ -32,7 +30,7 @@ function About() {
           Make your ideas come to life, grow your technical
           skills by pairing up with experienced students, and
           build a network that lasts beyond graduation. 
-          </h2>
+          </p>
         </div>
 
       </div>
