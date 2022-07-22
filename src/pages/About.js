@@ -8,19 +8,23 @@ function About() {
       <div className="About" style={{ 
         backgroundImage: `url(${background_image})`,
         height: 1117,
-        marginTop: -60,
+        marginTop: -20,
       }}>
 
         <div className="title">
           <h1>ABOUT</h1>
         </div>
     
-        <div className="body">
+        <div className="p1">
           <h2> 
           Ever feel like what you learn in the classroom is
           deeply theoretical, with little opportunities to build
           out practical applications?
-          <br></br>
+          </h2>
+        </div>
+
+        <div className="p2">
+          <h2>
           DevX is a student organization dedicated to solving
           that very problem! We comprise of several project
           teams building out real-world projects to help tackle
@@ -32,10 +36,6 @@ function About() {
         </div>
 
       </div>
-
-
-
-
     );    
   }
   export default About;
