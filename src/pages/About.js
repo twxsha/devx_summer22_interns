@@ -1,3 +1,6 @@
+import TransitionBtn from "./TransitionBtn.js"
+
+
 function About() {
 
     return (
@@ -5,6 +8,7 @@ function About() {
         <div>
           <p>about page</p>
         </div>
+        <TransitionBtn navUrl="Recruitment"/>
       </div>
     );    
   }
