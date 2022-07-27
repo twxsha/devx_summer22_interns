@@ -1,13 +1,15 @@
+import NavBar from "../NavBar";
+
 function About() {
 
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          <p>about page</p>
-        </div>
+        <NavBar></NavBar>
+        <p>about page</p>
       </div>
-    );    
-  }
-  export default About;
-  
-  
+    </div>
+  );
+}
+export default About;
+

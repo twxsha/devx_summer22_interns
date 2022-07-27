@@ -1,0 +1,53 @@
+.NavBar {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 86%;
+
+    color: #FFFFFF;
+  
+}
+
+.HomeButton {
+    position: absolute;
+    width: 58px;
+    height: 17px;
+    left: 530px;
+    top: 40px;
+    
+
+}
+
+.AboutButton {
+    position: absolute;
+    width: 61px;
+    height: 17px;
+    left: 625px;
+    top: 40px;
+}
+
+.RecruitmentButton {
+    position: absolute;
+    width: 127px;
+    height: 17px;
+    left: 705px;
+    top: 40px;
+}
+
+.ProjectsButton {
+    position: absolute;
+    width: 85px;
+    height: 17px;
+    left: 850px;
+    top: 40px;
+}
+
+.ContactsButton {
+    position: absolute;
+    width: 78px;
+    height: 17px;
+    left: 965px;
+    top: 40px;
+}
+

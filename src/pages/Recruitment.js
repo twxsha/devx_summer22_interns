@@ -1,13 +1,15 @@
+import NavBar from "../NavBar";
+
 function Recruitment() {
 
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          <p>Recruitment page</p>
-        </div>
+        <NavBar></NavBar>
+        <p>Recruitment page</p>
       </div>
-    );    
-  }
-  export default Recruitment;
-  
-  
+    </div>
+  );
+}
+export default Recruitment;
+
