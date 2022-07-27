@@ -1,21 +1,20 @@
-.NavBar {
+
+button {
     font-family: 'Russo One';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     line-height: 86%;
-
-    color: #FFFFFF;
-  
+    color: white;
+    background-color: black;
 }
 
 .HomeButton {
     position: absolute;
     width: 58px;
     height: 17px;
-    left: 530px;
+    left: 525px;
     top: 40px;
-    
 
 }
 
@@ -23,7 +22,7 @@
     position: absolute;
     width: 61px;
     height: 17px;
-    left: 625px;
+    left: 610px;
     top: 40px;
 }
 
