@@ -24,15 +24,14 @@ class TransitionBtn extends Component {
 
         return (
             <div style={{
-                display:'flex',
-                justifyContent:'center'
+                position: 'absolute',
+                left: '25%',
+                right: '25%',
+                bottom: '37.5%',
+                
             }}> 
-                <img id="transitionBtn" src={Arrow} width="40px" style={{
-                height:"auto",
-                clear: 'both',
-                position: 'relative',
-                marginTop: '90vh',
-                cursor:'pointer'
+                <img id="transitionBtn" src={Arrow} style={{
+
                 
             }}/>
             </div>
