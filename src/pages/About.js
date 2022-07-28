@@ -1,6 +1,6 @@
 import "../About.css";
 import background_image from "../images/background.png";
-
+import NavBar from "../NavBar";
 
 function About() {
 
@@ -9,7 +9,7 @@ function About() {
         backgroundImage: `url(${background_image})`,
         height: 1117,
       }}>
-
+        <NavBar></NavBar>
         <div className="title">
           <h1>ABOUT</h1>
         </div>
@@ -32,10 +32,8 @@ function About() {
           build a network that lasts beyond graduation. 
           </p>
         </div>
-
       </div>
-    );    
-  }
-  export default About;
-  
-  
+  );
+}
+export default About;
+

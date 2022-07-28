@@ -3,6 +3,7 @@ import styles from "../App.css"
 import background_image from "../images/background.png";
 import logoImage from "../images/logo.svg";
 import gifImage from "../../src/gif.gif";
+import NavBar from "../NavBar";
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
           height: 1117,
           marginTop: -20
         }}>
+          <NavBar></NavBar>
           <div className="leftLogo">
             <img src={logoImage} style={{
               width: 462,

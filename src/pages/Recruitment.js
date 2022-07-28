@@ -1,13 +1,14 @@
+import NavBar from "../NavBar";
 import background_image from "../images/background2.png";
 
 function Recruitment() {
-
     return (
       <div className="Home" style={{ 
         backgroundImage: `url(${background_image})`,
         height: 1771.22,
         marginTop: -20,
       }}>
+        <NavBar></NavBar>
         <div>
           <p style={{
             width: "629px",
@@ -48,8 +49,7 @@ function Recruitment() {
           <br></br><br></br>Our recruitment for Fall of 2022 is coming up soon!</p>
         </div>
       </div>
-    );    
-  }
-  export default Recruitment;
-  
-  
+  );
+}
+export default Recruitment;
+
