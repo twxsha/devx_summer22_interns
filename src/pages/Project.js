@@ -5,6 +5,7 @@ import project3 from "../images/Projects/image 18.svg";
 import project4 from "../images/Projects/image 19.svg";
 import rocket from "../images/Projects/Group 16.svg";
 import background_image from "../images/background.png";
+import NavBar from "../NavBar";
 <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'></link>
 
 
@@ -16,6 +17,7 @@ function Home() {
           height: 1117,
           marginTop: -20,
         }}>
+          <NavBar></NavBar>
           <div>
           <p style={{
             "border-radius": "nullpx",
