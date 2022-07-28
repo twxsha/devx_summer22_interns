@@ -10,7 +10,7 @@ function Home() {
         <div className="Home" style={{ 
           backgroundImage: `url(${background_image})`,
           height: 1117,
-          marginTop: -20,
+          marginTop: -20
         }}>
           <NavBar></NavBar>
           <div className="leftLogo">
