@@ -1,11 +1,11 @@
-import background_image from "../images/background.png";
+import background_image from "../images/background2.png";
 
 function Recruitment() {
 
     return (
       <div className="Home" style={{ 
         backgroundImage: `url(${background_image})`,
-        height: 1117,
+        height: 1771.22,
         marginTop: -20,
       }}>
         <div>
