@@ -29,14 +29,14 @@ function NavBar() {
             <div className='ProjectsButton'>
                 <button type="button" onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = 'http://google.com';
+                    window.location.href = '/Project';
                 }}>Projects</button>
             </div>
 
             <div className='ContactsButton'>
                 <button type="button" onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = 'http://google.com';
+                    window.location.href = '/';
                 }}>Contacts</button>
             </div>
 
