@@ -4,7 +4,7 @@ import "./Style.css";
 
 function NavBar() {
     return (
-        <div className='NavBar'>
+        <div className='NavBar'>  
             <div className='HomeButton'>
                 <button type="button" onClick={(e) => {
                     e.preventDefault();

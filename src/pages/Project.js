@@ -1,4 +1,5 @@
 import "../Project.css";
+import NavBar from "../NavBar";
 import project1 from "../images/Projects/image 9.svg";
 import project2 from "../images/Projects/image 10.svg";
 import project3 from "../images/Projects/image 18.svg";
@@ -16,6 +17,7 @@ function Home() {
           height: 1117,
           marginTop: -20,
         }}>
+           <NavBar></NavBar>
           <div>
           <p style={{
             "border-radius": "nullpx",
@@ -119,6 +121,7 @@ function Home() {
 
           </div>
         </div>
+         
       );
 }
 export default Home;
