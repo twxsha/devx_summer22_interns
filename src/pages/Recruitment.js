@@ -58,7 +58,7 @@ function Recruitment() {
               width: 241,
               height: 77,
               left: 149,
-              top: 874,
+              top: 800,
               position: "absolute",
               textAlign: "left",
               "font-family": "Open Sans",
