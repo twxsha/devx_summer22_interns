@@ -26,11 +26,10 @@
     text-align: left;
     
     font-size: 90px;
-    line-height: 86%;
+    line-height: 100%;
     vertical-align: top;
 
-    height: 77px;
-    width: 315px;
+
 
     border-radius: nullpx;
 
@@ -45,13 +44,14 @@
     margin-left:10%;
     width:55%;
     position:relative;
-    line-height: 86%;
+    line-height: 100%;
     text-align: left;
     color: white !important;
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 25px;
     line-height: 100%;
     letter-spacing: 0.07em;
+    font-family: sans-serif;
 
 
 }

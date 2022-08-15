@@ -2,5 +2,121 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height:90vh;
+    height:100vh;
+    overflow: hidden;
+    background:black;
 }
+
+.contactInner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 200px;
+    color:white
+    
+}
+
+.contactForm{
+    width: 40%;
+    padding: 50px;
+    border-radius: 15px;
+    background:black;
+    display: flex;
+    flex-direction:column;
+
+}
+
+.inputBox{
+    position: relative;
+    margin-top: 30px;
+    width:100%;
+}
+
+.contactForm input{
+    width:100%;
+    color:white;
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 50px;
+    padding: 10px;
+    background:transparent;
+    font-size: 25px;
+    outline: none;
+    transition: 0.5s;
+    
+}
+.contactForm span{
+    position: absolute;
+    left:15px;
+    padding: 12px;
+    transition: 0.5s;
+}
+
+.contactForm textarea{
+    width:100%;
+    color:white;
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 150px;
+    padding: 10px;
+    background:transparent;
+    font-size: 20px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contactForm input:focus ~span{
+    transform: translateY(-35px);
+    left:0px;
+}
+
+
+
+.contactForm input:valid ~span{
+    transform: translateY(-35px);
+    left:0px;
+    color:lightgreen;
+}
+
+.contactForm input:valid{
+    border:2px solid lightgreen;
+}
+
+
+.contactForm textarea:focus ~span{
+    transform: translateY(-35px);
+    left:0px;
+}
+
+.contactForm textarea:valid ~span{
+    transform: translateY(-35px);
+    left:0px;
+    color:lightgreen;
+}
+
+.contactForm textarea:valid{
+    border:2px solid lightgreen;
+}
+
+.submitWrapper{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submitBtn{
+    border-radius: 10px;
+    margin-left: 30px;
+    width: auto;
+    padding: 20px;
+    height:50px;
+    cursor: pointer;
+    line-height: 10px;
+    text-align: center;
+    border:2px solid white;
+    color:white;
+    font-size:30px
+    
+    
+}
+

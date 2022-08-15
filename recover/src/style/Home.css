@@ -12,10 +12,13 @@
     display:flex;
     margin-right: 20%;
 
+
+
 }
 
 .leftLogo img{
-
+    padding: 30px;
+    width:500px;
 }
 
 .rightGif{
