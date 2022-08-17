@@ -12,8 +12,7 @@ function Recruitment() {
       <div style={{ 
         backgroundImage: `url(${background_image})`,
         height: 2960.64,
-        width: 1771.22,
-        marginTop: -20,
+        marginTop: -20
       }}>
         <div>
           <p style={{
@@ -70,7 +69,7 @@ function Recruitment() {
               "text-shadow": "0px, 4px, 4px, rgba(0, 0, 0, 0.25)"
               }}> Roles</h2>
 
-            <img src={role1} alt="skill image" style={{
+            <img src={role1} alt="" style={{
               width: 149,
               height: 123,
               left: 225,
@@ -78,7 +77,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role2} alt="skill image" style={{
+            <img src={role2} alt="" style={{
               width: 185,
               height: 131,
               left: 452,
@@ -86,7 +85,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role3} alt="skill image" style={{
+            <img src={role3} alt="" style={{
               width: 149,
               height: 123,
               left: 225,
@@ -94,7 +93,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role2} alt="skill image" style={{
+            <img src={role2} alt="" style={{
               width: 185,
               height: 131,
               left: 452,
@@ -102,7 +101,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role5} alt="skill image" style={{
+            <img src={role5} alt="" style={{
               width: 165,
               height: 122,
               left: 717,
@@ -110,7 +109,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role6} alt="skill image" style={{
+            <img src={role6} alt="" style={{
               width: 165,
               height: 115,
               left: 962,
@@ -118,7 +117,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role3} alt="skill image" style={{
+            <img src={role3} alt="" style={{
               width: 147,
               height: 123,
               left: 1207,
@@ -126,7 +125,7 @@ function Recruitment() {
               position: "absolute",
             }}/>
 
-            <img src={role8} alt="skill image" style={{
+            <img src={role8} alt="" style={{
               width: 153,
               height: 126,
               left: 1434,
