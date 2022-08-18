@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.recruitment{
+    /*margin-left: 153px;*/
+    text-align: left;
+}
+
+h1{
+    font-size: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#application-process{
+    font-weight: 400;
+    display: flex;
+}
+
+.fcc-btn{
+    background-color: #1DABAA;
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 45px; 
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 30px;
+    width: 490px;
+    text-align: center;
+}
+
+.info{
+    line-height: 43px;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 73px;
+}
+
+a{
+    display: block;
+    margin-bottom: 97px;
+}
+
+.step p{
+    color: #FACD2E;
+    font-size: 50px;
+}
+
+.descrip p{
+    color: white;
+    font-size: 30px;
+}
