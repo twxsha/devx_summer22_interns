@@ -14,6 +14,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm install popmotion`
+
+Launches the popmotion module for the scrolling bar view in project page.\
+
+### `npm install stylefire`
+
+Launches the sylefire module for the scrolling bar view in project page.\
+
+### `npm install react-horizontal-scrolling-menu`
+
+Launches the react-horizontal-scrolling-menu module for the scrolling bar view in project page.\
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

@@ -66,8 +66,6 @@ function App() {
       >
         <div>
           <ScrollMenu
-            LeftArrow={LeftArrow}
-            RightArrow={RightArrow}
             onWheel={onWheel}
             transitionDuration={duration} // NOTE: for transitions
             transitionEase={easingFunctions[ease]}
@@ -81,43 +79,13 @@ function App() {
               />
             ))}
           </ScrollMenu>
-
-          <OptionsWrapper>
-            <OptionItem label="Duration">
-              <input
-                value={duration}
-                onChange={(ev) => setDuration(+ev.target.value)}
-              />
-            </OptionItem>
-            <OptionItem label="Ease">
-              <select
-                name="ease"
-                id="ease"
-                value={ease}
-                onChange={(ev) => setEase(ev.target.value)}
-              >
-                {Object.entries(easingFunctions).map(([name, fn]) => (
-                  <option value={name} key={name}>
-                    {name}
-                  </option>
-                ))}
-              </select>
-            </OptionItem>
-            <OptionItem label="Custom animation">
-              <input
-                checked={customAnimation}
-                onChange={(ev) => setCustomAnimation(ev.target.checked)}
-                type="checkbox"
-                style={{ width: "20px", height: "20px" }}
-              />
-            </OptionItem>
-          </OptionsWrapper>
+          
+ 
 
           <div
             style={{ marginTop: "10px", display: "flex", columnGap: "10px" }}
           ></div>
         </div>
-        <Footer />
       </div>
     </>
   );

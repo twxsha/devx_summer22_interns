@@ -38,7 +38,7 @@ export function Card({ title, itemId }: { title: string; itemId: string }) {
           //backgroundImage: `url(${'project'+itemId[4]})`,
           backgroundImage: `url(${project1})`,
           backgroundPosition: 'center',
-          //backgroundSize: 'cover',
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           height: "400px"
         }}
