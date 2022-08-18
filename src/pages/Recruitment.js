@@ -1,5 +1,6 @@
 import NavBar from "../NavBar";
 import background_image from "../images/background2.png";
+import no from "../images/background.png"
 
 function Recruitment() {
     return (
