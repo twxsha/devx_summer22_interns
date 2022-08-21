@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Arrow from '../images/down-arrow-svgrepo-com.svg'
+import "/style/TransitionBtn.css";
 
 class TransitionBtn extends Component {
     constructor(props){
@@ -23,16 +24,9 @@ class TransitionBtn extends Component {
     render() {
 
         return (
-            <div style={{
-                position: 'absolute',
-                left: '25%',
-                right: '25%',
-                bottom: '37.5%',
-                
-            }}> 
+            <div className="transitionButton">
                 <img id="transitionBtn" src={Arrow} style={{
 
-                
             }}/>
             </div>
         );
