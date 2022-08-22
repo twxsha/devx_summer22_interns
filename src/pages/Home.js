@@ -1,4 +1,4 @@
-import background_image from "../images/background.png";
+import "../style/Home.css";
 import logoImage from "../images/logo.svg";
 import gifImage from "../../src/images/gif.gif";
 import TransitionBtn from "../components/TransitionBtn.js";
