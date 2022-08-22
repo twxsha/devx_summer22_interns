@@ -1,4 +1,6 @@
-.About{
-    height:100vh;
-    margin-bottom:-5%;
+.About {
+  height: 100vh;
+  margin-bottom: -5%;
+  overflow: visible;
+  padding: 1em;
 }

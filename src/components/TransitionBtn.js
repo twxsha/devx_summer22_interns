@@ -25,14 +25,14 @@ class TransitionBtn extends Component {
   render() {
     return (
       <div
-        class="transitionBtn animate__animated animate__bounce animate__repeat-2 animate__slower"
+        class="transitionButton animate__animated animate__bounce animate__repeat-2 animate__slower"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-delay="300"
         onClick={this.navToNext}
         style={{
           zIndex: "10",
-          display: "flex",
+          // display: "flex",
           justifyContent: "center",
           position: "relative",
         }}
@@ -40,8 +40,8 @@ class TransitionBtn extends Component {
         <img
           id="transitionBtn"
           src={Arrow}
-          width="40px"
           style={{
+            width: "40px",
             height: "auto",
             clear: "both",
             position: "relative",

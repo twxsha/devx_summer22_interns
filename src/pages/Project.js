@@ -1,6 +1,6 @@
 import "../style/Project.css";
 import "../style/Section.css";
-
+import TransitionBtn from "../components/TransitionBtn.js";
 import project1 from "../images/Projects/image 9.svg";
 import project2 from "../images/Projects/image 10.svg";
 import project3 from "../images/Projects/image 18.svg";
@@ -69,6 +69,7 @@ function Home() {
           <p className="scrollText">Scroll to the left to view more...</p>
         </div>
       </div>
+      <TransitionBtn navUrl="/Contact" />
     </div>
   );
 }
