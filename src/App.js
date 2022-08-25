@@ -1,6 +1,7 @@
 import './style/App.css';
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Project from "./pages/Project";
 import Recruitment from "./pages/Recruitment";
 import NavBar from './components/NavBar';
 import { Routes, Route, BrowserRouter} from "react-router-dom";
@@ -14,10 +15,10 @@ function MainPage(){
       <Home />
       <About />
       <Recruitment />
-  </div>
-  )
+      <Project />
+    </div>
+  );
 }
-
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Project />} />
         </Routes>
       </BrowserRouter>
     </div>
