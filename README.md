@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Install our Backend and other Libraries by running the following
 
-In the project directory, you can run:
+### `npm i firebase`
 
 ### `npm start`
 
