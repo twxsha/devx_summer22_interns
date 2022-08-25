@@ -1,7 +1,6 @@
 import TransitionBtn from "../components/TransitionBtn.js";
 import "../style/Section.css";
 import "../style/Recruitment.css";
-
 import role1 from "../images/image2.png";
 import role2 from "../images/image3.png";
 import role3 from "../images/image10.png";
@@ -88,7 +87,7 @@ function Recruitment() {
           <p className="p1" data-aos="fade-up" data-aos-delay="300">
             Our recruitment for Fall of 2022 is coming up soon!
           </p>
-          <h2 className="RolesTitleText"> Roles</h2>
+          <h2 className="SubTitleText"> Roles</h2>
           <div className="rolesContainer">
             {beginnerRoles.map((role, index) => (
               <RoleImages key={index} role={role}>
@@ -105,9 +104,66 @@ function Recruitment() {
               </RoleImages>
             ))}
           </div>
+          <h2 className="SubTitleText"> Application Process</h2>
+          <div className="applicationContainer">
+            <div className="info">
+              <div className="step">
+                <p>1. Submit Application</p>
+              </div>
+              <div className="descrip">
+                <p>
+                  Tell us about your interests an how you think you can
+                  contribute to Devx. We will be looking at your resume and
+                  portfolio (if applicable).
+                </p>
+              </div>
+              <div className="step">
+                <p>2. Demo Day</p>
+              </div>
+              <div className="descrip">
+                <p>
+                  If you pass the initial screening, you will be invited to our
+                  Demo Day in which all teams looking to recruit will present
+                  their projects. You can then express interest in your top
+                  teams.
+                </p>
+              </div>
+              <div className="step">
+                <p>3. Team Interviews</p>
+              </div>
+              <div className="descrip">
+                <p>
+                  If these teams are interested in you as well, they will reach
+                  out to you for an interview.
+                </p>
+              </div>
+              <div className="step">
+                <p>4. Final Decision</p>
+              </div>
+              <div className="descrip">
+                <p>
+                  If all goes well, PMs will send out an email formally inviting
+                  you to the team. Welcome!
+                </p>
+              </div>
+            </div>
+            <div className="links">
+              <a class="applicationButton" href="https://www.google.com/">
+                Developer Application
+              </a>
+              <a class="applicationButton" href="https://www.google.com/">
+                PM Application
+              </a>
+              <a class="applicationButton" href="https://www.google.com/">
+                Design Application
+              </a>
+              <a class="applicationButton" href="https://www.google.com/">
+                Marketing Application
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-
       <TransitionBtn navUrl="#Project" />
     </div>
   );

@@ -1,26 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 .Recruitment {
   display: flex;
   width: 100%;
   justify-content: center;
   height: 100%;
   overflow: hidden;
-  margin-bottom: 5vh;
 }
 
 .RoleImage {
-  /* height:20%;
-    width:20%; */
   width: 150px;
   height: 130px;
   justify-content: center;
   margin: 10em 10em 10em 10em;
 }
 
-.RolesTitleText {
+.SubTitleText {
   margin-top: 5%;
   margin-left: 10%;
-  width: 241px;
-  height: 77px;
   position: relative;
   text-align: left;
   font-family: "Open Sans", sans-serif;
@@ -31,7 +28,7 @@
   color: #ffffff;
   vertical-align: top;
   border-radius: nullpx;
-  margin-bottom: 1%;
+  /* margin-bottom: 1%; */
   text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
 }
 
@@ -64,4 +61,59 @@
   border-radius: nullpx;
   margin-bottom: 1%;
   text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
+}
+
+
+.applicationContainer{
+  font-weight: 200;
+  display: flex;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.applicationButton{
+  background-color: #1DABAA;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 45px; 
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 30px;
+  width: 490px;
+  text-align: center;
+}
+
+.info{
+  line-height: 43px;
+}
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 73px;
+}
+
+a{
+  display: block;
+  margin-bottom: 97px;
+}
+
+.step p{
+  color: #FACD2E;
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.descrip p{
+  color: white;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
 }
