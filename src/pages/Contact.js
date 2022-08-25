@@ -31,7 +31,7 @@ class Contact extends Component {
     }
     render() {
         return (
-            <div className='contactWrapper' id="Contact">
+            <div className='contactWrapper'>
                 <div className='contactInner'>
                     <form className='contactForm'>
                         <h1 className=''>Contact Us</h1>

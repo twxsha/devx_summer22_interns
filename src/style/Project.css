@@ -1,20 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
 .Project {
   /* display: flex; */
   width: 100%;
   justify-content: center;
   height: 150vh;
-  overflow: visible;
-  padding: 1em;
+  overflow: hidden;
   margin-bottom: -5%;
 }
-    
+
+.Heading {
+  font-family: "Orbitron";
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(https://fonts.googleapis.com/css?family=Orbitron);
+}
 
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   margin-left: 10%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  border: 1px solid black;
 }
 
 .projectText {
@@ -48,7 +65,6 @@
   /* margin: 6em 10em 10em 10em; */
   margin-top: 6em;
   justify-content: center;
-  margin-bottom: 0em;
 }
 
 .rocketImage {
@@ -57,7 +73,6 @@
   /* justify-content: center; */
   /* margin: 0em 10em 10em 10em; */
   margin-top: 0em;
-  margin-bottom: 0em;
 }
 
 .rocketContainer {
@@ -65,5 +80,4 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-left: 10%;
-      margin-bottom: 0em;
     }

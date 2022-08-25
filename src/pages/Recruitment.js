@@ -108,7 +108,7 @@ function Recruitment() {
         </div>
       </div>
 
-      <TransitionBtn navUrl="#Project" />
+      <TransitionBtn navUrl="#" />
     </div>
   );
 }
