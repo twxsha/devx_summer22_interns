@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  scroll-behavior: "smooth" !important;
+}
+
+.background {
+  height: 1000%;
+  z-index: -1;
+  width: 100%;
+  background-image: url("../images/background.png");
+  position: absolute;
 }
