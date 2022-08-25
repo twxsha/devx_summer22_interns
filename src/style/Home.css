@@ -15,7 +15,7 @@
 
 .leftLogo img {
   padding: 30px;
-  width: 600px;
+  width: 500px;
 }
 
 .rightGif {
@@ -27,5 +27,5 @@
 
 .rightGif img {
   width: auto;
-  height: 90%;
+  height: 80%;
 }

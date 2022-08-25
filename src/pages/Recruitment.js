@@ -1,7 +1,6 @@
 import TransitionBtn from "../components/TransitionBtn.js";
 import "../style/Section.css";
 import "../style/Recruitment.css";
-
 import role1 from "../images/image2.png";
 import role2 from "../images/image3.png";
 import role3 from "../images/image10.png";
@@ -19,7 +18,7 @@ const RoleImages = ({ role, children }) => (
 function Recruitment() {
   const [beginnerRoles] = useState([
     {
-      name: "Product Manager Intern",
+      name: "Associate Product Manager",
       logo: role1,
       description:
         "Want to be a PM but don't have enough experience? We've all been there. If you check this box on the applications, you'll get to shadow a PM and learn on the job to get the necessary experience, in addition to working on your current role. We hope to see many people from this program graduate to PM's for DevX.",
@@ -88,23 +87,23 @@ function Recruitment() {
           <p className="p1" data-aos="fade-up" data-aos-delay="300">
             Our recruitment for Fall of 2022 is coming up soon!
           </p>
-          <h2 className="RolesTitleText"> Roles</h2>
-          <div className="rolesContainer">
-            {beginnerRoles.map((role, index) => (
-              <RoleImages key={index} role={role}>
-                <img src={role.logo} alt="logo" />
-                <p className="roleText">{role.name}</p>
-              </RoleImages>
-            ))}
-          </div>
-          <div className="rolesContainer">
-            {roles.map((role, index) => (
-              <RoleImages key={index} role={role}>
-                <img src={role.logo} alt="logo" />
-                <p className="roleText">{role.name}</p>
-              </RoleImages>
-            ))}
-          </div>
+            <h2 className="RolesTitleText"> Roles</h2>
+            <div className="rolesContainer">
+              {beginnerRoles.map((role, index) => (
+                <RoleImages key={index} role={role}>
+                  <img src={role.logo} alt="logo" />
+                  <p className="roleText">{role.name}</p>
+                </RoleImages>
+              ))}
+            </div>
+            <div className="rolesContainer">
+              {roles.map((role, index) => (
+                <RoleImages key={index} role={role}>
+                  <img src={role.logo} alt="logo" />
+                  <p className="roleText">{role.name}</p>
+                </RoleImages>
+              ))}
+            </div>
         </div>
       </div>
 
