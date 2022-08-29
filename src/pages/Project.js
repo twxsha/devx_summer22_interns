@@ -58,10 +58,10 @@ function Home() {
           ))}
         </div>
         <div className="rocketContainer">
-          <img src={rocket} className="rocketImage"></img>
+          <img src={rocket} alt="rocket" className="rocketImage"></img>
           <p className="scrollText">Scroll to the left to view more...</p>
         </div>
-        <TransitionBtn navUrl="/Contact" />
+        <TransitionBtn navUrl="/#Contact" />
       </div>
     </div>
   );

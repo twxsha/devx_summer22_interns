@@ -88,18 +88,20 @@ function Recruitment() {
             Our recruitment for Fall of 2022 is coming up soon!
           </p>
           <h2 className="SubTitleText"> Roles</h2>
+          <p className="roleType">Beginner Roles</p>
           <div className="rolesContainer">
             {beginnerRoles.map((role, index) => (
-              <RoleImages key={index} role={role}>
-                <img src={role.logo} alt="logo" />
+              <RoleImages key={index} role={role} className="roleImage">
+                <img src={role.logo} className="motion" alt="logo"/>
                 <p className="roleText">{role.name}</p>
               </RoleImages>
             ))}
           </div>
+          <p className="roleType">Experienced Roles</p>
           <div className="rolesContainer">
             {roles.map((role, index) => (
-              <RoleImages key={index} role={role}>
-                <img src={role.logo} alt="logo" />
+              <RoleImages key={index} role={role} className="roleImage">
+                <img src={role.logo} alt="logo" className="motion" />
                 <p className="roleText">{role.name}</p>
               </RoleImages>
             ))}

@@ -10,12 +10,13 @@ import Contact from "./pages/Contact";
 function MainPage() {
   return (
     <div className="App">
-      <div className="background"></div>
+      {/* <div className="background"></div> */}
       <NavBar />
       <Home />
       <About />
       <Recruitment />
       <Project/>
+      <Contact/>
     </div>
   );
 }
@@ -26,7 +27,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Project />} />
         </Routes>
       </BrowserRouter>

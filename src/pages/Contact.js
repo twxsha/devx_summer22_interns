@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { collection, getFirestore, doc, setDoc } from "firebase/firestore";
-import { initializeApp } from "firebase/app";
 import app from "../firebase.js";
 
 import "../style/Contact.css";
@@ -29,52 +28,54 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div className="contactWrapper">
-        <div className="contactInner">
-          <form className="contactForm">
-            <h1 className="">Contact Us</h1>
-            <div className="inputBox animate__animated animate__backInUp">
-              <input type="text" id="contactName" required></input>
-              <span>Name</span>
-            </div>
-            <div className="inputBox animate__animated animate__backInUp">
-              <input type="text" id="contactEmail" required></input>
-              <span>Email</span>
-            </div>
-            <div className="inputBox animate__animated animate__backInUp">
-              <textarea id="contactMessage" required></textarea>
-              <span>Message</span>
-            </div>
-            <div className="submitWrapper animate__animated animate__backInUp ">
-              <div
-                className="submitBtn"
-                id="submitBtn"
-                onClick={async () => {
-                  let name = $("contactName").value;
-                  let email = $("contactEmail").value;
-                  let message = $("contactMessage").value;
-                  try {
-                    await setDoc(doc(messages), {
-                      name: name,
-                      email: email,
-                      message: message,
-                    });
+      <div className="section">
+        <div className="contactWrapper" id="Contact">
+          <div className="contactInner">
+            <form className="contactForm">
+              <h1 className="">Contact Us</h1>
+              <div className="inputBox animate__animated animate__backInUp">
+                <input type="text" id="contactName" required></input>
+                <span>Name</span>
+              </div>
+              <div className="inputBox animate__animated animate__backInUp">
+                <input type="text" id="contactEmail" required></input>
+                <span>Email</span>
+              </div>
+              <div className="inputBox animate__animated animate__backInUp">
+                <textarea id="contactMessage" required></textarea>
+                <span>Message</span>
+              </div>
+              <div className="submitWrapper animate__animated animate__backInUp ">
+                <div
+                  className="submitBtn"
+                  id="submitBtn"
+                  onClick={async () => {
+                    let name = $("contactName").value;
+                    let email = $("contactEmail").value;
+                    let message = $("contactMessage").value;
+                    try {
+                      await setDoc(doc(messages), {
+                        name: name,
+                        email: email,
+                        message: message,
+                      });
 
-                    setTimeout(() => {
-                      window.location.href = "/";
-                    }, 0);
-                  } catch {
-                    alert("Failed sending data!");
-                  }
-                }}
-              >
-                Submit
+                      setTimeout(() => {
+                        window.location.href = "/";
+                      }, 0);
+                    } catch {
+                      alert("Failed sending data!");
+                    }
+                  }}
+                >
+                  Submit
+                </div>
+                <div className="submitBtn" id="goBackBtn">
+                  Go Back
+                </div>
               </div>
-              <div className="submitBtn" id="goBackBtn">
-                Go Back
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     );

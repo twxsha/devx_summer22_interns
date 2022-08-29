@@ -8,8 +8,8 @@ function Home() {
   return (
     <div className="section">
       <div className="Home">
-        <div className="leftLogo">
-          <img src={logoImage}></img>
+        <div className="leftLogo animate__animated animate__fadeInLeft">
+          <img src={logoImage} alt="logo"></img>
         </div>
         <div className="rightGif animate__animated animate__fadeInRight">
           <img src={gifImage} alt="gif loading" />

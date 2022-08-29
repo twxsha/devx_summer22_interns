@@ -38,6 +38,11 @@
   margin: 0em 1em 0em 0em;
 }
 
+.projectImage:hover {
+  transform:  scale(1.2);
+   z-index: 3;
+}
+
 .scrollText {
   position: relative;
   font-family: "Open Sans", sans-serif;
