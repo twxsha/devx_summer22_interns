@@ -1,32 +1,33 @@
 .Home {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
   margin-bottom: -5%;
 }
 
 .leftLogo {
-  margin-top: 16vh;
   display: flex;
   align-items: center;
+  justify-content: left;
   flex-direction: row;
-  margin-right: 12%;
+  padding: 2em;
+  margin-top: 5em;
+  /* margin-right: 12%; */
 }
 
 .leftLogo img {
-  height: 20%;
+  margin-top: 10%;
+  height: 10em;
+  /* justify-content: left; */
 }
 
 .rightGif {
-  margin-top: 16vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: right;
+  padding: 3em;
 }
 
 .rightGif img {
   width: auto;
-  height: 90%;
+  height: 50em;
 }
