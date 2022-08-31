@@ -30,9 +30,12 @@ class Contact extends Component {
     return (
       <div className="section">
         <div className="contactWrapper" id="Contact">
+        <div data-aos="fade-in" data-aos-duration="4000"></div>
+        <h1 className="title" data-aos="fade-down" data-aos-delay="0">
+          Contact<br></br><div className="line">Us</div>
+        </h1>
           <div className="contactInner">
             <form className="contactForm">
-              <h1 className="">Contact Us</h1>
               <div className="inputBox animate__animated animate__backInUp">
                 <input type="text" id="contactName" required></input>
                 <span>Name</span>
@@ -40,6 +43,10 @@ class Contact extends Component {
               <div className="inputBox animate__animated animate__backInUp">
                 <input type="text" id="contactEmail" required></input>
                 <span>Email</span>
+              </div>
+              <div className="inputBox animate__animated animate__backInUp">
+                <input type="text" id="contactSubject" required></input>
+                <span>Subject</span>
               </div>
               <div className="inputBox animate__animated animate__backInUp">
                 <textarea id="contactMessage" required></textarea>
