@@ -14,7 +14,19 @@ const { useState } = React;
 const RoleImages = ({ role, children }) => (
   <div className="roles">{children}</div>
 );
+
 const AppLinks = ({ apps, children }) => <div className="">{children}</div>;
+
+const Popup = props => {
+  return (
+    <div className="popup-box">
+      <div className="box">
+        <span className="close-icon" onClick={props.handleClose}>x</span>
+        {props.content}
+      </div>
+    </div>
+  );
+};
 
 function Recruitment() {
   const [beginnerRoles] = useState([
@@ -87,6 +99,11 @@ function Recruitment() {
       link: "https://www.google.com/",
     },
   ]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
   return (
     <div className="section">
       <div className="Recruitment" id="Recruitment">
@@ -171,7 +188,14 @@ function Recruitment() {
             <div className="links">
               {ApplicationLinks.map((apps, index) => (
                 <AppLinks key={index} apps={apps} className="roleImage">
-                  <a class="applicationButton" href={apps.link}>
+                  {/* In order to enable links, put links into ApplicationLinks array up above, uncomment href section below and comment out "Onclick={togglePopup} in the same line" */}
+                  <a class="applicationButton" /*href={apps.link}*/ onClick={togglePopup}>
+                    {isOpen && <Popup
+                      content={<>
+                        <b>Applications are not out yet!</b>
+                      </>}
+                      handleClose={togglePopup}
+                    />}
                     {apps.name}
                   </a>
                 </AppLinks>
@@ -185,3 +209,5 @@ function Recruitment() {
   );
 }
 export default Recruitment;
+
+
