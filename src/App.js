@@ -1,3 +1,4 @@
+import React from 'react';
 import "./style/App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,7 +11,6 @@ import Contact from "./pages/Contact";
 function MainPage() {
   return (
     <div className="App">
-      {/* <div className="background"></div> */}
       <NavBar />
       <Home />
       <About />
