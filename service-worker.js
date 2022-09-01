@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ucladevx/precache-manifest.95255317185ecb3f74e7f5e7871fbea2.js"
+  "/devx_summer22_interns/precache-manifest.7b6a7b1a8012bd3fa5d5789e4259b59a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ucladevx/index.html", {
+workbox.routing.registerNavigationRoute("/devx_summer22_interns/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
