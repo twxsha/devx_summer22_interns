@@ -9,9 +9,10 @@
 }
 .motion {
   height: 160px;
+  margin-bottom: 15%;
 }
 .roles:hover {
-  transform:  scale(1.2) rotate(350deg);
+  transform:  scale(1.2);
    z-index: 3;
 }
 .SubTitleText {
@@ -44,7 +45,6 @@
 }
 
 .roleText {
-  margin-top: 15%;
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -123,4 +123,27 @@ a{
   color: white;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
+}
+
+.description{
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1em;
+}
+
+.back{
+  border: 5px solid white;
+  border-radius: 2em;
+  width: 22em;
+  padding: 3em 2em 1em 2em;
+  background-color: black;
+}
+
+.front{
+  justify-content: center;
+  border: 5px solid white;
+  border-radius: 3em;
+  width: 20em;
+  padding: 3em 0em 3em 0em;
 }

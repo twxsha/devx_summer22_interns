@@ -8,6 +8,7 @@ import role5 from "../images/image6.png";
 import role6 from "../images/image7.png";
 import role8 from "../images/image9.png";
 import React from "react";
+import ReactCardFlip from "react-card-flip";
 
 const { useState } = React;
 
@@ -22,15 +23,16 @@ function Recruitment() {
       name: "Product Manager Intern",
       logo: role1,
       description:
-        "Want to be a PM but don't have enough experience? We've all been there. If you check this box on the applications, you'll get to shadow a PM and learn on the job to get the necessary experience, in addition to working on your current role. We hope to see many people from this program graduate to PM's for DevX.",
+        "Want to be a PM but don't have enough experience? Shadow a PM and learn on the job to get the necessary experience. We hope to see many people from this program graduate to PM's for DevX.",
     },
     {
       name: "Developer/Design Intern",
       logo: role2,
       description:
-        "Don't worry if you don't have enough technical experience, or are new to CS. We'll help you along the way and we guarantee to teach you your preferred skills while giving you the satisfying experience of contributing to your team's project.",
+        "Don't worry if you don't have enough technical experience, or are new to software. You can be considered to shawdow a Developer on a team or join our new intern program which developed this very website.",
     },
   ]);
+
   const [roles] = useState([
     {
       name: "Product Manager",
@@ -87,6 +89,29 @@ function Recruitment() {
       link: "https://www.google.com/",
     },
   ]);
+
+  const Cards = ({ card }) => {
+    const [isFlipped, setIsFlipped] = React.useState(false);
+    return (
+      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <div onClick={() => setIsFlipped((prev) => !prev)} className="CardFront">
+          <div className="front">
+            <img src={card.logo} className="motion" alt="logo" />
+            <p className="roleText">{card.name}</p>
+          </div>
+        </div>
+        <div
+          onMouseLeave={() => setIsFlipped((prev) => !prev)}
+          className="CardBack"
+        >
+          <div className="back">
+            <p className="roleText">{card.name}</p>
+            <p className="description">{card.description}</p>
+          </div>
+        </div>
+      </ReactCardFlip>
+    );
+  };
   return (
     <div className="section">
       <div className="Recruitment" id="Recruitment">
@@ -111,8 +136,7 @@ function Recruitment() {
           <div className="rolesContainer">
             {beginnerRoles.map((role, index) => (
               <RoleImages key={index} role={role} className="roleImage">
-                <img src={role.logo} className="motion" alt="logo" />
-                <p className="roleText">{role.name}</p>
+                <Cards card={role}></Cards>
               </RoleImages>
             ))}
           </div>
@@ -120,8 +144,7 @@ function Recruitment() {
           <div className="rolesContainer">
             {roles.map((role, index) => (
               <RoleImages key={index} role={role} className="roleImage">
-                <img src={role.logo} alt="logo" className="motion" />
-                <p className="roleText">{role.name}</p>
+                <Cards card={role}></Cards>
               </RoleImages>
             ))}
           </div>
