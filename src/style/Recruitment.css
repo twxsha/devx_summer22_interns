@@ -35,17 +35,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  /* margin-top: 5%; */
   margin-left: 10%;
 }
 
 .roles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  padding: 5em;
-  width: 25vw;
+  padding: 5vw;
+  width: 30em;
 }
 
 .roleText {
@@ -76,17 +71,6 @@
   margin-left: 10%;
 }
 
-
-.applicationContainer{
-  font-weight: 200;
-  display: flex;
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-
-}
-
 .applicationButton{
   background-color: #1DABAA;
   color: white;
@@ -99,17 +83,27 @@
   text-align: center;
 }
 
+.applicationContainer{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
 .info{
   line-height: 43px;
+  justify-content: left;
+  width: 50em;
 }
 
 .links{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   font-size: 30px;
   font-weight: 700;
-  margin: 73px;
+  padding: 2em;
 }
 
 a{

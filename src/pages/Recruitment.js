@@ -14,6 +14,7 @@ const { useState } = React;
 const RoleImages = ({ role, children }) => (
   <div className="roles">{children}</div>
 );
+const AppLinks = ({ apps, children }) => <div className="">{children}</div>;
 
 function Recruitment() {
   const [beginnerRoles] = useState([
@@ -68,6 +69,24 @@ function Recruitment() {
         "Works closely with the PM and designer to establish a recognizable product brand. Expected to be resourceful and engage in user testing and demographic analysis. Finds new ways to reach and engage target audiences.",
     },
   ]);
+  const [ApplicationLinks] = useState([
+    {
+      name: "Developer Application",
+      link: "https://www.google.com/",
+    },
+    {
+      name: "PM Application",
+      link: "https://www.google.com/",
+    },
+    {
+      name: "Design Application",
+      link: "https://www.google.com/",
+    },
+    {
+      name: "Marketing Applicationn",
+      link: "https://www.google.com/",
+    },
+  ]);
   return (
     <div className="section">
       <div className="Recruitment" id="Recruitment">
@@ -92,7 +111,7 @@ function Recruitment() {
           <div className="rolesContainer">
             {beginnerRoles.map((role, index) => (
               <RoleImages key={index} role={role} className="roleImage">
-                <img src={role.logo} className="motion" alt="logo"/>
+                <img src={role.logo} className="motion" alt="logo" />
                 <p className="roleText">{role.name}</p>
               </RoleImages>
             ))}
@@ -150,18 +169,13 @@ function Recruitment() {
               </div>
             </div>
             <div className="links">
-              <a class="applicationButton" href="https://www.google.com/">
-                Developer Application
-              </a>
-              <a class="applicationButton" href="https://www.google.com/">
-                PM Application
-              </a>
-              <a class="applicationButton" href="https://www.google.com/">
-                Design Application
-              </a>
-              <a class="applicationButton" href="https://www.google.com/">
-                Marketing Application
-              </a>
+              {ApplicationLinks.map((apps, index) => (
+                <AppLinks key={index} apps={apps} className="roleImage">
+                  <a class="applicationButton" href={apps.link}>
+                    {apps.name}
+                  </a>
+                </AppLinks>
+              ))}
             </div>
           </div>
         </div>
