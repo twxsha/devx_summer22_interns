@@ -1,38 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 .Recruitment {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  /* how much height the section should have */
-  height: 150vh;
+  width: 90%;
+  justify-content: left;
+  height: 100%;
   overflow: hidden;
-  margin-bottom: -5%;
 }
-
-.RoleImage {
-  /* height:20%;
-    width:20%; */
-  width: 150px;
-  height: 130px;
-  justify-content: center;
-  margin: 10em 10em 10em 10em;
+.motion {
+  height: 160px;
 }
-
-.RolesTitleText {
+.roles:hover {
+  transform:  scale(1.2) rotate(350deg);
+   z-index: 3;
+}
+.SubTitleText {
   margin-top: 5%;
   margin-left: 10%;
-  width: 241px;
-  height: 77px;
   position: relative;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 100%;
   color: #ffffff;
   vertical-align: top;
   border-radius: nullpx;
-  margin-bottom: 1%;
+  /* margin-bottom: 1%; */
   text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
 }
 
@@ -40,16 +35,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  /* margin-top: 5%; */
   margin-left: 10%;
 }
 
 .roles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3em;
-  border: 1px solid black;
+  padding: 5vw;
+  width: 30em;
 }
 
 .roleText {
@@ -58,11 +49,78 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 100%;
   color: #ffffff;
   vertical-align: top;
   border-radius: nullpx;
   margin-bottom: 1%;
   text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
+}
+
+.roleType{
+  color: #FACD2E;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5vh;
+  justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 10%;
+}
+
+.applicationButton{
+  background-color: #1DABAA;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 45px; 
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 30px;
+  width: 490px;
+  text-align: center;
+}
+
+.applicationContainer{
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.info{
+  line-height: 43px;
+  justify-content: left;
+  width: 50em;
+}
+
+.links{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 2em;
+}
+
+a{
+  display: block;
+  margin-bottom: 97px;
+}
+
+.step p{
+  color: #FACD2E;
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.descrip p{
+  color: white;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
 }

@@ -8,13 +8,6 @@ import project4 from "../images/Projects/image 19.svg";
 import rocket from "../images/Projects/Group 16.svg";
 import React from "react";
 
-{
-  /* <link
-  href="https://fonts.googleapis.com/css?family=Orbitron"
-  rel="stylesheet"
-></link>; */
-}
-
 const { useState } = React;
 
 const ProjectImages = ({ project, children }) => (
@@ -65,11 +58,11 @@ function Home() {
           ))}
         </div>
         <div className="rocketContainer">
-          <img src={rocket} className="rocketImage"></img>
+          <img src={rocket} alt="rocket" className="rocketImage"></img>
           <p className="scrollText">Scroll to the left to view more...</p>
         </div>
+        <TransitionBtn navUrl="/#Contact" />
       </div>
-      <TransitionBtn navUrl="/Contact" />
     </div>
   );
 }

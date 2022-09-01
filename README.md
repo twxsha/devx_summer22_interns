@@ -1,14 +1,10 @@
-# Getting Started with Create React App
+To run this project locally, make sure to have npm installed.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Install our Backend and other Libraries by running the following
-
-### `npm i firebase`
+### `npm install firebase`
+Initialize Firebase in your app .
 
 ### `npm start`
-
-Runs the app in the development mode.\
+Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\

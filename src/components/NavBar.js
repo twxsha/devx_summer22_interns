@@ -4,7 +4,7 @@ import searchImage from "../images/search.png";
 
 function NavBar() {
   return (
-    <div className="NavBar sticky-top">
+    <div className="NavBar">
       <button
         type="button"
         onClick={(e) => {
@@ -44,7 +44,7 @@ function NavBar() {
       <button
         type="button"
         onClick={(e) => {
-          window.location.href = "/contact";
+          window.location.href = "#Contact";
         }}
       >
         Contacts
@@ -77,6 +77,7 @@ function NavBar() {
             >
               <img
                 src={searchImage}
+                alt="search"
                 style={{
                   position: "relative",
                   top: 5,

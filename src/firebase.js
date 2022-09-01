@@ -1,4 +1,3 @@
-import { collection, getFirestore, doc, setDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 
