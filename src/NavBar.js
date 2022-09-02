@@ -36,9 +36,18 @@ function NavBar() {
             <div className='ContactsButton'>
                 <button type="button" onClick={(e) => {
                     e.preventDefault();
-                    window.location.href = '/';
+                    window.location.href = '/Contact';
                 }}>Contacts</button>
             </div>
+            
+            <div className='MeetTeamButton'>
+                <button type="button" onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/MeetTeam';
+                }}>Meet the Team</button>
+            </div>
+
+
 
         </div>
     );

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Russo+One&display=swap');
+
+.Team{
+    background-image: url(/src/images/background.png);
+    height: 1771.22px;
+    margin-top: -20px;
+}
+
+.title p{
+    width: 681px;
+    height: 77px;
+    left: 97px;
+    top: 190px;
+    text-align: left;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 86%;
+    /* identical to box height, or 86px */
+    color: #FACD2E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 97px;
+    margin-top: 190px;
+}
+
+.memberContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    margin-top: -50px;
+    max-width: 1600px;
+}
+
+.mem{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0px 90px 75px 90px;
+    max-width: 183px;
+    text-decoration: none;
+}
+
+.mem:hover{
+    cursor: pointer;
+}
+
+.memEllipse img{
+    position:absolute;
+    margin-left: -155px;
+    margin-top: 40px;
+}
+
+.memberImage img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 20px solid #A2FBFF;
+    margin-bottom: -12px;
+}
+
+.memName p{
+    width: 260px;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 25.8px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: -12px;
+}
+
+.memRole p{
+    color: #ABA8A8;
+    width: 260px;
+    font-size: 25px;
+    font-family: 'Russo One';
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 25.8px;
+}

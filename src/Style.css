@@ -48,3 +48,10 @@ button {
     right: 31%;
     top: 40px;
 }
+
+.MeetTeamButton {
+    position: absolute;
+    height: 17px;
+    right: 21%;
+    top: 40px;
+}
