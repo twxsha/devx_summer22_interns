@@ -95,7 +95,7 @@ function Recruitment() {
       link: "https://www.google.com/",
     },
     {
-      name: "Marketing Applicationn",
+      name: "Marketing Application",
       link: "https://www.google.com/",
     },
   ]);
