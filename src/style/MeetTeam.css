@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Russo+One&display=swap');
+
+.team{
+    margin-top: 5em;
+    padding: 1em;
+}
+.memberContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5em;
+}
+
+.mem{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3em;
+    max-width: 30em;
+    text-decoration: none;
+}
+
+.mem:hover{
+    cursor: pointer;
+    transform:  scale(1.2);
+    z-index: 3;
+}
+
+.memEllipse img{
+    position:absolute;
+    margin-top: 2em;
+    margin-left: -16em;
+    width: 30em;
+}
+
+.memberImage{
+    width: 30em;
+}
+
+.memberImage img{
+    position: relative;
+    width: 20em;
+    border-radius: 50%;
+    border: 2em solid #A2FBFF;
+    margin-bottom: 1em;
+}
+
+.memName p{
+    width: 260px;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 25.8px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.memRole p{
+    color: #ABA8A8;
+    width: 260px;
+    font-size: 25px;
+    font-family: 'Russo One';
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 25.8px;
+}
+
+.MeetTeamButton {
+    position: absolute;
+    height: 17px;
+    right: 21%;
+    top: 40px;
+}
