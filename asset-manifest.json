@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/devx_summer22_interns/static/css/main.4f8bb92d.css",
-    "main.js": "/devx_summer22_interns/static/js/main.b4062fd4.js",
+    "main.css": "/devx_summer22_interns/static/css/main.f3c8ff29.css",
+    "main.js": "/devx_summer22_interns/static/js/main.3bc9b434.js",
     "static/media/gif.gif": "/devx_summer22_interns/static/media/gif.1408db3a629c24e7c11e.gif",
+    "static/media/trisha.png": "/devx_summer22_interns/static/media/trisha.e17d6f3db023186d8a29.png",
     "static/media/logo.svg": "/devx_summer22_interns/static/media/logo.84f9cd64d4d5ca528d33aa1b7f41eee5.svg",
+    "static/media/isha.png": "/devx_summer22_interns/static/media/isha.172ae3d8107f7f1d1c64.png",
     "static/media/image 18.svg": "/devx_summer22_interns/static/media/image 18.442c0841eba41664900b862ced005e0d.svg",
     "static/media/image 19.svg": "/devx_summer22_interns/static/media/image 19.34d94d57e4a5b68abff4a25a3f0e7a1d.svg",
     "static/media/image 10.svg": "/devx_summer22_interns/static/media/image 10.3025fdac80d9750889bc35502aea8822.svg",
     "static/media/image 9.svg": "/devx_summer22_interns/static/media/image 9.4598f9b9dbf80b86bd2ce2a2f7b72eaf.svg",
     "static/media/background.png": "/devx_summer22_interns/static/media/background.7687c4f794f36b2d365a.png",
+    "static/media/twisha.jpeg": "/devx_summer22_interns/static/media/twisha.f98214442597f97e8e65.jpeg",
+    "static/media/justin.jpeg": "/devx_summer22_interns/static/media/justin.135c4e533c16f611a5fc.jpeg",
+    "static/media/medha.jpeg": "/devx_summer22_interns/static/media/medha.425c1cd1c8d31b205227.jpeg",
+    "static/media/ribhav.jpg": "/devx_summer22_interns/static/media/ribhav.5e4b5fbfa1c91d9f269a.jpg",
+    "static/media/brandon.jpeg": "/devx_summer22_interns/static/media/brandon.7cdb4cd954e50775b0a1.jpeg",
     "static/media/Group 16.svg": "/devx_summer22_interns/static/media/Group 16.de3e5851f8454da7059e49be07d75ea2.svg",
     "index.html": "/devx_summer22_interns/index.html",
     "static/media/down-arrow.svg": "/devx_summer22_interns/static/media/down-arrow.fbc5927e24041e2eb9307f41415f3581.svg",
-    "main.4f8bb92d.css.map": "/devx_summer22_interns/static/css/main.4f8bb92d.css.map",
-    "main.b4062fd4.js.map": "/devx_summer22_interns/static/js/main.b4062fd4.js.map"
+    "main.f3c8ff29.css.map": "/devx_summer22_interns/static/css/main.f3c8ff29.css.map",
+    "main.3bc9b434.js.map": "/devx_summer22_interns/static/js/main.3bc9b434.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8bb92d.css",
-    "static/js/main.b4062fd4.js"
+    "static/css/main.f3c8ff29.css",
+    "static/js/main.3bc9b434.js"
   ]
 }
