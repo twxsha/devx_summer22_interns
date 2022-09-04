@@ -138,6 +138,14 @@ a {
   left: 0;
 }
 
+.popup-box:hover {
+  color:white;
+}
+
+.close-icon:hover {
+  color:rgb(0, 81, 255);
+}
+
 .box {
   position: relative;
   width: 70%;
