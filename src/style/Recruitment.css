@@ -7,14 +7,17 @@
   height: 100%;
   overflow: hidden;
 }
+
 .motion {
   height: 160px;
   margin-bottom: 15%;
 }
+
 .roles:hover {
-  transform:  scale(1.2);
-   z-index: 3;
+  transform: scale(1.2);
+  z-index: 3;
 }
+
 .SubTitleText {
   margin-top: 5%;
   margin-left: 10%;
@@ -58,7 +61,7 @@
   text-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.25);
 }
 
-.roleType{
+.roleType {
   color: #FACD2E;
   font-size: 50px;
   font-weight: bold;
@@ -71,11 +74,11 @@
   margin-left: 10%;
 }
 
-.applicationButton{
+.applicationButton {
   background-color: #1DABAA;
   color: white;
   padding-top: 45px;
-  padding-bottom: 45px; 
+  padding-bottom: 45px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   border-radius: 30px;
@@ -83,7 +86,7 @@
   text-align: center;
 }
 
-.applicationContainer{
+.applicationContainer {
   display: flex;
   flex-wrap: wrap;
   font-weight: 200;
@@ -94,24 +97,24 @@
   justify-content: center;
 }
 
-.info{
+.info {
   line-height: 43px;
   justify-content: left;
   width: 50em;
 }
 
-.links{
+.links {
   font-size: 30px;
   font-weight: 700;
   padding: 2em;
 }
 
-a{
+a {
   display: block;
   margin-bottom: 97px;
 }
 
-.step p{
+.step p {
   color: #FACD2E;
   font-size: 50px;
   font-family: "Open Sans", sans-serif;
@@ -119,7 +122,7 @@ a{
   margin-top: 5vh;
 }
 
-.descrip p{
+.descrip p {
   color: white;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
@@ -146,4 +149,57 @@ a{
   border-radius: 3em;
   width: 20em;
   padding: 3em 0em 3em 0em;
+}
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.popup-box:hover {
+  color:white;
+}
+
+.close-icon:hover {
+  color:rgb(0, 81, 255);
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(125vh - 85vh - 20px);
+  background: #5DABAA;
+  border-radius: 10px;
+  padding: 100px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: 15.5%;
+  top: 39%;
+  background: #5DABAA;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+b {
+  color: white;
+  font-family: 'Open Sans';
+  font-style: normal;
+  text-align: center;
 }
