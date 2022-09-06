@@ -16,24 +16,23 @@ const ProjectImages = ({ project, children }) => (
 );
 
 const CardStyle = {
-  border: "1px solid yellow",
+  border: "transparent",
+  backgroundColor: "transparent",
 };
 
 const Cards = ({ card }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-      <div
-        style = {CardStyle} onClick={() => setIsFlipped((prev) => !prev)} className="CardFront">
-        <motion.div className="front" whileHover={{scale: 1.2, transition: {duration:.2}}}
+      <div onClick={() => setIsFlipped((prev) => !prev)} className="CardFront">
+        <motion.div style={CardStyle} className="front" whileHover={{scale: 1.2, transition: {duration:.2}}}
           whileTap={{scale: 0.8}}>
           <motion.img src={card.logo} className="projectImages" alt="logo" />
         </motion.div>
       </div>
       <div onClick={() => setIsFlipped((prev) => !prev)} className="CardBack">
-        <motion.div className="back" whileHover={{scale: 1.2, transition: {duration:.2}}}
+        <motion.div style={CardStyle} className="back" whileHover={{scale: 1.2, transition: {duration:.2}}}
           whileTap={{scale: 0.8}}>
-          <p className="projectText">{card.name}</p>
           <p className="description">{card.description}</p>
         </motion.div>
       </div>

@@ -15,7 +15,7 @@
 }
 
 .projectText {
-  margin-top: 15%;
+  margin-top: 1%;
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -56,7 +56,6 @@
 .rocketImage {
   position: relative;
   width: 15%;
-
   margin-top: 0em;
   margin-bottom: 0em;
 }
