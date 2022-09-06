@@ -6,13 +6,40 @@ import project2 from "../images/Projects/image 10.svg";
 import project3 from "../images/Projects/image 18.svg";
 import project4 from "../images/Projects/image 19.svg";
 import rocket from "../images/Projects/Group 16.svg";
-import React, {useState} from "react";
+import React from "react";
 import {motion} from "framer-motion"
-// const { useState } = React;
+import ReactCardFlip from "react-card-flip";
+const { useState } = React;
 
 const ProjectImages = ({ project, children }) => (
   <div className="projects">{children}</div>
 );
+
+const CardStyle = {
+  border: "1px solid yellow",
+};
+
+const Cards = ({ card }) => {
+  const [isFlipped, setIsFlipped] = React.useState(false);
+  return (
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <div
+        style = {CardStyle} onClick={() => setIsFlipped((prev) => !prev)} className="CardFront">
+        <motion.div className="front" whileHover={{scale: 1.2, transition: {duration:.2}}}
+          whileTap={{scale: 0.8}}>
+          <motion.img src={card.logo} className="projectImages" alt="logo" />
+        </motion.div>
+      </div>
+      <div onClick={() => setIsFlipped((prev) => !prev)} className="CardBack">
+        <motion.div className="back" whileHover={{scale: 1.2, transition: {duration:.2}}}
+          whileTap={{scale: 0.8}}>
+          <p className="projectText">{card.name}</p>
+          <p className="description">{card.description}</p>
+        </motion.div>
+      </div>
+    </ReactCardFlip>
+  );
+};
 
 function Home() {
   
@@ -53,10 +80,7 @@ function Home() {
         <div className="projectContainer" data-aos="fade-down" data-aos-delay="0">
           {project.map((project, index) => (
             <ProjectImages key={index} project={project}>
-              <motion.img src={project.logo} className="projectImage" alt="logo" 
-                whileHover={{scale: 1.2, transition: {duration:.2}}}
-                whileTap={{scale: 0.8}}
-              />
+              <Cards card={project}></Cards>
               <p className="projectText">{project.name}</p>
             </ProjectImages>
           ))}
