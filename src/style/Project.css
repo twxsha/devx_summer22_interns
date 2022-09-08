@@ -23,7 +23,7 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 100%;
-  color: #ffffff;
+  color: black;
   vertical-align: top;
   border-radius: nullpx;
   margin-bottom: 1%;
@@ -33,6 +33,7 @@
 .description {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
+  color: black;
 }
 
 .projectImage {
@@ -58,6 +59,7 @@
   position: relative;
   width: 15%;
   margin-top: 0em;
+  margin-left: 50%;
   margin-bottom: 0em;
 }
 
@@ -69,3 +71,11 @@
   margin-bottom: 0em;
 }
 
+.front {
+  border-color: transparent;
+}
+
+.back {
+  border-color: transparent;
+  background-color: #ffffff;
+}
