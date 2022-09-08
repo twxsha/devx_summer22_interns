@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { collection, getFirestore, doc, setDoc } from "firebase/firestore";
 import app from "../firebase.js";
-
 import "../style/Contact.css";
 import "../style/App.css";
 import "../style/Section.css";
