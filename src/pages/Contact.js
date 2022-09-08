@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { collection, getFirestore, doc, setDoc } from "firebase/firestore";
+import TransitionUpBtn from "../components/TransitionUpBtn.js";
 import app from "../firebase.js";
 import "../style/Contact.css";
 import "../style/App.css";
 import "../style/Section.css";
 const $ = (element) => document.getElementById(element);
+
 
 const db = getFirestore(app);
 const messages = collection(db, "messages");
@@ -73,6 +75,7 @@ class Contact extends Component {
                   Go Back
                 </div>
               </div>
+              <div className="transitionUpBtn"><TransitionUpBtn navUrl="/#" /></div>
             </form>
           </div>
         </div>
