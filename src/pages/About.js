@@ -1,3 +1,4 @@
+import React from 'react';
 import TransitionBtn from "../components/TransitionBtn.js";
 import "../style/About.css";
 
