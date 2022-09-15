@@ -7,14 +7,36 @@ import project3 from "../images/Projects/image 18.svg";
 import project4 from "../images/Projects/image 19.svg";
 import rocket from "../images/Projects/Group 16.svg";
 import React from "react";
-
+import {motion} from "framer-motion"
+import ReactCardFlip from "react-card-flip";
 const { useState } = React;
 
 const ProjectImages = ({ project, children }) => (
   <div className="projects">{children}</div>
 );
 
+const Cards = ({ card }) => {
+  const [isFlipped, setIsFlipped] = React.useState(false);
+  return (
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <div onClick={() => setIsFlipped((prev) => !prev)} className="CardFront">
+        <motion.div className="front" whileHover={{scale: 1.4, transition: {duration:.2}}}
+          whileTap={{scale: 0.8}}>
+          <motion.img src={card.logo} className="projectImages" alt="logo" />
+        </motion.div>
+      </div>
+      <div onMouseLeave={() => setIsFlipped((prev) => !prev)} className="CardBack">
+        <motion.div className="back" whileTap={{scale: 0.8}}>
+          <p className="projectText">{card.name}</p>
+          <p className="description">{card.description}</p>
+        </motion.div>
+      </div>
+    </ReactCardFlip>
+  );
+};
+
 function Home() {
+  
   const [project] = useState([
     {
       name: "Embark",
@@ -49,17 +71,16 @@ function Home() {
         <h1 className="title" data-aos="fade-down" data-aos-delay="0">
           Projects
         </h1>
-        <div className="projectContainer">
+        <div className="projectContainer" data-aos="fade-down" data-aos-delay="0">
           {project.map((project, index) => (
             <ProjectImages key={index} project={project}>
-              <img src={project.logo} className="projectImage" alt="logo" />
-              <p className="projectText">{project.name}</p>
+              <Cards card={project}></Cards>
             </ProjectImages>
           ))}
         </div>
         <div className="rocketContainer">
-          <img src={rocket} alt="rocket" className="rocketImage"></img>
-          <p className="scrollText">Scroll to the left to view more...</p>
+          <img src={rocket} alt="rocket" className="rocketImage" data-aos="fade-down" data-aos-delay="0"></img>
+          <p className="scrollText" data-aos="fade-down" data-aos-delay="0">Scroll to the left to view more...</p>
         </div>
         <TransitionBtn navUrl="/#Contact" />
       </div>
