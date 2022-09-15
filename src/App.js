@@ -1,3 +1,4 @@
+import React from 'react';
 import "./style/App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -6,16 +7,17 @@ import Project from "./pages/Project";
 import NavBar from "./components/NavBar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Contact from "./pages/Contact";
+import MeetTeam from './pages/MeetTeam';
 
 function MainPage() {
   return (
     <div className="App">
-      {/* <div className="background"></div> */}
       <NavBar />
       <Home />
       <About />
       <Recruitment />
       <Project/>
+      <MeetTeam/>
       <Contact/>
     </div>
   );
