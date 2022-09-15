@@ -1,7 +1,7 @@
 To run this project locally, make sure to have npm installed.
 
-### `npm install firebase`
-Initialize Firebase in your app .
+### `npm install --legacy-peer-deps`
+Install all dependencies.
 
 ### `npm start`
 Run the app in the development mode.\
