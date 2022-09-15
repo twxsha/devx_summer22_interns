@@ -9,7 +9,6 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 200px;
   color: white;
 }
 
@@ -112,6 +111,7 @@
 
 .transitionUpBtn {
   margin-top: 20%;
+  margin-bottom: 0;
 }
 
 .credits {
@@ -121,9 +121,8 @@
   font-weight: bold;
   font-size: 20px;
   color: #ffffff;
-  justify-content: center;
-  left: 600px;
-  top: 50px;
-  bottom: 0px;
-  margin-bottom: 0;
+  justify-content: right;
+  text-align: right;
+  margin-bottom: 1em;
+  margin-right: 3em;
 }

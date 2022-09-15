@@ -78,13 +78,13 @@ class Contact extends Component {
               </div>
               <div className="transitionUpBtn">
                 <TransitionUpBtn navUrl="/#" />
-                <motion.div initial={{y:250}} animate={{y:-10}} transition={{delay: 0.5, type:"spring", stiffness:150}}>
-                  <p className="credits">Created by DevX Intern Class of 2026!</p>
-                </motion.div>
               </div>
             </form>
           </div>
         </div>
+        <motion.div initial={{y:250}} animate={{y:-10}} transition={{delay: 0.5, type:"spring", stiffness:150}}>
+          <p className="credits">Created by DevX Intern Class of 2026!</p>
+        </motion.div>
       </div>
     );
   }
