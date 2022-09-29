@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Contact from "./pages/Contact";
 import MeetTeam from './pages/MeetTeam';
+import Events from "./pages/Events";
 
 function MainPage() {
   return (
@@ -15,6 +16,7 @@ function MainPage() {
       <NavBar />
       <Home />
       <About />
+      <Events />
       <Recruitment />
       <Project/>
       <MeetTeam/>
