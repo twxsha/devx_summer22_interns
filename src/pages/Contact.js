@@ -53,13 +53,35 @@ class Contact extends Component {
                     let name = $("contactName").value;
                     let email = $("contactEmail").value;
                     let message = $("contactMessage").value;
-                    try {
+
+
+                    const longTask = () => new Promise(async resolve =>{
                       await setDoc(doc(messages), {
                         name: name,
                         email: email,
                         message: message,
-                      });
+                      })
+                      setTimeout(() => resolve("Complete."), 0);
+                    })
+                    
+                    const timeout = (cb, interval) => () =>
+                      new Promise(resolve => setTimeout(() => cb(resolve), interval))
+                    
+                    const onTimeout = timeout(resolve =>
+                      resolve("The 'maybeLongTask' ran too long!"), 2000)
+                    
+                    Promise.race([longTask, onTimeout].map(f => f()))
+                    .then(alert)
 
+                    
+                   
+                    try {
+                      
+                      await setDoc(doc(messages), {
+                        name: name,
+                        email: email,
+                        message: message,
+                      })
                       setTimeout(() => {
                         window.location.href = "/";
                       }, 0);
