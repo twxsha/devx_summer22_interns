@@ -1,0 +1,12 @@
+.SubtitleText {
+    font-size: 25px;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    border:transparent;
+    font-weight: 90;
+    cursor:pointer;
+}
+
+a {
+    color: white;
+}
