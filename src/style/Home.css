@@ -18,7 +18,7 @@
 
 .leftLogo img {
   margin-top: 10%;
-  height: 10em;
+  height: 7em;
   /* justify-content: left; */
 }
 
@@ -29,5 +29,5 @@
 
 .rightGif img {
   width: auto;
-  height: 50em;
+  height: 35em;
 }

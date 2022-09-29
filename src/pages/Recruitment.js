@@ -91,7 +91,7 @@ function Recruitment() {
     },
     {
       name: "PM Application",
-      link: "https://www.google.com/",
+      link: "https://docs.google.com/forms/d/1l5JFa-oOWMgah1Jo8zX3yqmjELlb_diNq_Dosatz-4I/edit",
     },
     {
       name: "Design Application",
@@ -149,7 +149,7 @@ function Recruitment() {
             Product Managers, Designers and Marketers.
           </p>
           <p className="p1" data-aos="fade-up" data-aos-delay="300">
-            Our recruitment for Fall of 2022 is coming up soon!
+            Our recruitment for Fall of 2022 has began! Come out to our info session. Details coming soon!
           </p>
           <h2 className="SubTitleText"> Roles</h2>
           <p className="roleType">Beginner Roles</p>

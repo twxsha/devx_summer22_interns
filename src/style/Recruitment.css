@@ -9,7 +9,7 @@
 }
 
 .motion {
-  height: 160px;
+  height: 130px;
   margin-bottom: 15%;
 }
 
@@ -26,7 +26,7 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 55px;
   line-height: 100%;
   color: #ffffff;
   vertical-align: top;
@@ -44,7 +44,8 @@
 
 .roles {
   padding: 5vw;
-  width: 30em;
+  padding: 3vh;
+  width: 22em;
 }
 
 .roleText {
@@ -52,7 +53,7 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 100%;
   color: #ffffff;
   vertical-align: top;
@@ -63,7 +64,7 @@
 
 .roleType {
   color: #FACD2E;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   margin-top: 5vh;
@@ -82,7 +83,7 @@
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   border-radius: 30px;
-  width: 490px;
+  width: 13em;
   text-align: center;
 }
 
@@ -91,7 +92,7 @@
   flex-wrap: wrap;
   font-weight: 200;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
   justify-content: center;
@@ -100,7 +101,8 @@
 .info {
   line-height: 43px;
   justify-content: left;
-  width: 50em;
+  width: 40em;
+  margin-left: 4em;
 }
 
 .links {
@@ -116,7 +118,7 @@ a {
 
 .step p {
   color: #FACD2E;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 5vh;
   margin-top: 5vh;
@@ -124,22 +126,22 @@ a {
 
 .descrip p {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
 }
 
 .description{
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   margin-top: 1em;
 }
 
 .back{
   border: 5px solid white;
-  border-radius: 2em;
-  width: 22em;
-  padding: 3em 2em 1em 2em;
+  border-radius: 3em;
+  width: 17em;
+  padding: 2em 1em 0em 1em;
   background-color: black;
 }
 
@@ -147,8 +149,8 @@ a {
   justify-content: center;
   border: 5px solid white;
   border-radius: 3em;
-  width: 20em;
-  padding: 3em 0em 3em 0em;
+  width: 17em;
+  padding: 2em 0em 2em 0em;
 }
 /* Popup style */
 .popup-box {
