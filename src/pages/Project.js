@@ -5,14 +5,25 @@ import project1 from "../images/Projects/image 9.svg";
 import project2 from "../images/Projects/image 10.svg";
 import project3 from "../images/Projects/image 18.svg";
 import project4 from "../images/Projects/image 19.svg";
+import project5 from "../images/Projects/5.svg";
 import rocket from "../images/Projects/Group 16.svg";
+
+import { animated, useSpring } from "react-spring";
 import React from "react";
+
+
+
+{
+  /* <link
+  href="https://fonts.googleapis.com/css?family=Orbitron"
+  rel="stylesheet"
+></link>; */
+}
 
 const { useState } = React;
 
-const ProjectImages = ({ project, children }) => (
-  <div className="projects">{children}</div>
-);
+
+
 
 function Home() {
   const [project] = useState([
@@ -40,7 +51,56 @@ function Home() {
       description:
         "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
     },
-  ]);
+    {
+      name: "RESTart",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+    {
+      name: "BruinCreates",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+    {
+      name: "Sike",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+    {
+      name: "BruinBot",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+    {
+      name: "BruinMinder",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+    {
+      name: "Coming Soon!",
+      logo: project5,
+      description:
+        "Passionate about mobile platforms including iOS, Android and React Native. Will integrate APIs and translate design prototypes into code to create functional, native mobile applications.",
+    },
+  ])
+ 
+  const ProjectImages = ({ project, children }) => (
+    <div className="projects" style={{
+      ...style,
+    }}>{children}</div>
+  );
+
+const style = useSpring({
+  from: {
+    transform: "perspective(500px) rotateY(0deg)"
+  },
+  transform: "perspective(500px) rotateY(25deg)"
+});;
 
   return (
     <div className="section">
@@ -51,18 +111,22 @@ function Home() {
         </h1>
         <div className="projectContainer">
           {project.map((project, index) => (
-            <ProjectImages key={index} project={project}>
-              <img src={project.logo} className="projectImage" alt="logo" />
+            <ProjectImages key={index} project={project} style={{
+              ...style,
+            }}>
+              <img src={project.logo} className="projectImage" alt="logo" style={{
+              ...style,
+            }}/>
               <p className="projectText">{project.name}</p>
             </ProjectImages>
           ))}
         </div>
         <div className="rocketContainer">
-          <img src={rocket} alt="rocket" className="rocketImage"></img>
+          <img src={rocket} className="rocketImage"></img>
           <p className="scrollText">Scroll to the left to view more...</p>
         </div>
-        <TransitionBtn navUrl="/#Contact" />
       </div>
+      <TransitionBtn navUrl="/Contact" />
     </div>
   );
 }
