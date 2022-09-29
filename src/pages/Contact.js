@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { collection, getFirestore, doc, setDoc } from "firebase/firestore";
 import app from "../firebase.js";
-
+import Swal from 'sweetalert2';
 import "../style/Contact.css";
 import "../style/App.css";
 import "../style/Section.css";
@@ -61,7 +61,16 @@ class Contact extends Component {
                       });
 
                       setTimeout(() => {
-                        window.location.href = "/";
+                        Swal.fire({
+                          title: 'Success!',
+                          width: '45%',
+                          padding: '3em',
+                          color: 'black',
+                          icon:'success',
+                          background: 'white',
+                          confirmButtonText: 'Close'
+                        })
+                        
                       }, 0);
                     } catch {
                       alert("Failed sending data!");
